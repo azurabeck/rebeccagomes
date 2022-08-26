@@ -1,28 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-
-const FooterWrapper = styled.div`
-    align-items: center;
-    display: flex;
-    height: 10vh;
-    justify-content: space-between;    
-    padding: 0 ${(props) => { return props.theme.space.hg }};
-`;
+import { FooterWrapper , FooterLogo } from './style'
+import SocialNetwork from '../../infra/Data/socialNetwork'
 
 export function FooterContainer() {
   return (
       <FooterWrapper>
-        <section>
+        <FooterLogo>
           <label>Rebecca</label><br/>
-          <label>Design & Code Developer</label>
-        </section>
-
+          <p>Design & Code Developer</p>
+        </FooterLogo>
         <section>
           <ul>
-            <li><a href=''>github</a></li>
-            <li><a href=''>linkedin</a></li>
-            <li><a href=''>whatsapp</a></li>
+            { SocialNetwork.map((link, i) => (
+              <li key={i}><a href={link.url} target='_blank' alt={link.alt}>{link.img}</a></li>
+            )) }
           </ul>
         </section>
       </FooterWrapper>

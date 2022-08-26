@@ -1,9 +1,9 @@
-import React , {useState} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
-// IMPORTS COMPONENTS
+// IMPORTS INFRA
+import Typography from '../src/infra/Typography'
 import Head from '../src/infra/Head'
-import Typography from '../src/infra/typography'
 
 
 const MainWrapper = styled.div`  
@@ -25,8 +25,8 @@ export function MainContainer() {
 export default function Home() {
     return (
     
-    <div>
-        <Head title='Home - Profile' />
+    <div>      
+        <Head title='Rebecca Gomes - Home'></Head>
         <Typography>
             {MainContainer()}
         </Typography>

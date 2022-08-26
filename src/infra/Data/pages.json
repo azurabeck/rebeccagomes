@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Home",
+        "link": "/",
+        "head": "RS Portifólio - Home"
+    },
+    {
+        "title": "About",
+        "link": "/about",
+        "head": "RS Portifólio - About"
+    },
+    {
+        "title": "Experience",
+        "link": "/exp",
+        "head": "RS Portifólio - Experience"
+    },
+    {
+        "title": "Profile",
+        "link": "/profile",
+        "head": "RS Portifólio - Profile"
+    },
+    {
+        "title": "Contact",
+        "link": "/contact",
+        "head": "RS Portifólio - Contact"
+    }
+]
