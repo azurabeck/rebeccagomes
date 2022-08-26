@@ -27,6 +27,9 @@ export const NavbarWrapper = styled.div`
 `;
 
 export const MenuWrapper = styled.section`
+
+      align-items: center;
+      display: flex;
       
       div {
         align-items: center;
@@ -82,16 +85,24 @@ export const LangWrapper = styled.nav`
       li {
         color: ${cl_primary};
         font-weight: 500;
-        margin-right: ${size_sm};
-        padding: 0;
 
-          &.active {
-            color: ${cl_orange}    
+        a {
+          color: ${cl_primary};
+          font-weight: 500;
+          margin-right: ${size_sm};
+          padding: 0;
+          text-decoration: none;
+            &:hover {
+              color: ${cl_red};
+              cursor: pointer;
+            }           
+        }  
+        
+        &.active {
+          a {
+            color: ${cl_orange};
           }
-          &:hover {
-            color: ${cl_red};
-            cursor: pointer;
-          }        
+        }
       }
     }     
 `
