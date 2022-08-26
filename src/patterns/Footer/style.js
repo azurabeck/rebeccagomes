@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const hg_size = (props) => { return props.theme.space.hg }
 const xxl_size = (props) => { return props.theme.space.xxl } 
-const lg_size = (props) => { return props.theme.space.lg } 
+const xl_size = (props) => { return props.theme.space.xl } 
 const md_size = (props) => { return props.theme.space.md }
 const cl_primary = (props) => { return props.theme.colors.primary }
 const cl_gray = (props) => { return props.theme.colors.gray }
@@ -44,14 +44,14 @@ export const FooterLogo = styled.section`
         color: ${cl_red};
         font-family: ${font};
         font-weight: 400;
-        font-size: ${xxl_size};
+        font-size: ${xl_size};
         letter-spacing: 0.475em;
     }
 
     p {
         font-style: normal;
         font-weight: 400;
-        font-size: ${lg_size};
+        font-size: 18px;
         color: ${cl_gray};
     }
 `; 

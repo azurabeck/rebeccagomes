@@ -6,7 +6,7 @@ export const theme = {
   
       // NEUTRAL COLORS
       gray: '#888888',
-      light_gray: "#CCD1D2",
+      light_gray: "#A2B2B6",
       dark_gray: '#61777B',
   
       // HOT COLORS

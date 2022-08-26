@@ -16,10 +16,12 @@ export default class MyApp extends App {
     const path = this.props.router.asPath
     const NavType = path === '/' ? 1 : 2
 
+    console.log(this.props)
+
     return (
       <ThemeProvider theme={theme}>
         <GlobalStyle/>
-        <Header type={NavType}/>
+        <Header type={NavType} path={path}/>
         <ComponentWrapper>
           <Component {...pageProps} />    
         </ComponentWrapper>
