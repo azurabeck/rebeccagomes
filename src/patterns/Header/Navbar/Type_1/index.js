@@ -8,18 +8,20 @@ import { useRouter } from "next/router";
 export default function Type_1(props) {
 
   const [menu , setMenuState] = useState(false)
-  const { locale, locales, defaultLocale, asPath } = useRouter();
+  const { locale, asPath } = useRouter();
+  const PageMenu = Pages[locale];
+  const getTitle = PageMenu.filter(page => page.link === props.path)
 
   return (
     <NavbarWrapper>   
         <MenuWrapper>
             <div onClick={() => setMenuState(!menu)}>
               { barsIc }          
-              <label>{props.path === '/' ? 'Home' : props.path}</label>
+              <label>{getTitle[0].title}</label>
             </div>
             { menu &&
                 <ul>
-                    { Pages.map((page, i) => (
+                    { PageMenu && PageMenu.map((page, i) => (
                         page.link === '/' ? null : <li key={i}><Link href={page.link}><a>{page.title}</a></Link></li>
                     )) }
                 </ul>        
@@ -34,6 +36,7 @@ export default function Type_1(props) {
                   href={asPath}
                   locale="pt-BR">pt</Link>
               </li>
+              <li> / </li>
               <li className={locale === "en-US" && 'active'}>
                 <Link
                   activeClassName={locale === "en-US"}

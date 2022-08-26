@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const size_hg = (props) => { return props.theme.space.hg }
 const size_sm = (props) => { return props.theme.space.sm }
+const size_xs = (props) => { return props.theme.space.xs }
 const size_md = (props) => { return props.theme.space.md }
 
 const cl_primary = (props) => { return props.theme.colors.primary }
@@ -55,7 +56,7 @@ export const MenuWrapper = styled.section`
           align-items: center;
           display: flex;
           list-style: none;
-          margin-left: ${size_md};
+          margin-left: ${size_sm};
           padding: 0;
 
           li {
@@ -89,8 +90,7 @@ export const LangWrapper = styled.nav`
         a {
           color: ${cl_primary};
           font-weight: 500;
-          margin-right: ${size_sm};
-          padding: 0;
+          padding: 0 ${size_xs};
           text-decoration: none;
             &:hover {
               color: ${cl_red};
