@@ -1,6 +1,6 @@
 import App from 'next/app'
 import styled , {ThemeProvider} from 'styled-components'
-import { theme , GlobalStyle } from './style'
+import { theme , GlobalStyle } from '../src/assets/_style'
 
 // IMPORT PATTERNS
 import Footer from '../src/patterns/Footer'
