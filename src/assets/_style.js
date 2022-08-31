@@ -22,6 +22,10 @@ export const theme = {
     fonts: {
       big_shoulder: 'Big Shoulders Display',
       roboto:  'Roboto, sans-serif',
+
+      //to calc -> (value - 10) / 2. Sample do get postion from value 22 -> (22 - 10) / 2 = 6
+      //pos: [0]     [1]     [2]     [3]     [4]     [5]     [6]     [7]     [8]     [9]     [10]    [11]
+      size: ['10px', '12px', '14px', '16px', '18px', '20px', '22px', '24px', '26px', '28px', '30px', '32px'] 
     },
     space: { none: 0, xxs: '4px', xs: '8px', sm: '12px', md: '16px', lg: '20px', xl: '24px', xxl: '28px', hg: '32px'  }
   }
@@ -31,13 +35,16 @@ export const theme = {
         font-family: ${theme.fonts.roboto};
         margin: 0;
       }
-      html, body {
-        background: linear-gradient(#ffffff, #d1d1d1);
+
+      #__next {        
+        background: linear-gradient(#ffffff, #d1d1d1);        
         bottom: 0; 
         left: 0;  
         position: absolute;
         right: 0;
         top: 0;   
       }
+
+
   `;
   

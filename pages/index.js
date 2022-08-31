@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import Image from "next/image";
 import imageImp from '../src/assets/images/cover.png'
 
 // IMPORTS INFRA

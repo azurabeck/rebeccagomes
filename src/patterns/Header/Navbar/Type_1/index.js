@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React , { useState } from 'react'
-import { NavbarWrapper , MenuWrapper , LangWrapper } from '../style'
+import { NavbarWrapper , MenuWrapper } from './style'
+import { LangWrapper } from '../style'
 import Pages from '../../../../infra/Data/pages.json'
 import { barsIc } from '../../../../assets/fontawesome'
 import { useRouter } from "next/router";

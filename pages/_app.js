@@ -6,10 +6,6 @@ import { theme , GlobalStyle } from '../src/assets/_style'
 import Footer from '../src/patterns/Footer'
 import Header from '../src/patterns/Header'
 
-const ComponentWrapper = styled.div`
-  min-height: 75vh;
-`;
-
 export default class MyApp extends App {
    render() {
     const { Component, pageProps } = this.props
@@ -20,9 +16,9 @@ export default class MyApp extends App {
       <ThemeProvider theme={theme}>
         <GlobalStyle/>
         <Header type={NavType} path={path}/>
-        <ComponentWrapper>
+        <div>
           <Component {...pageProps} />    
-        </ComponentWrapper>
+        </div>
         <Footer/>
       </ThemeProvider>
     )
