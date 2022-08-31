@@ -7,7 +7,7 @@ import Footer from '../src/patterns/Footer'
 import Header from '../src/patterns/Header'
 
 const ComponentWrapper = styled.div`
-  min-height: 80vh;
+  min-height: 75vh;
 `;
 
 export default class MyApp extends App {

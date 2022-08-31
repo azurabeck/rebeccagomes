@@ -13,7 +13,7 @@ const font = (props) => { return props.theme.fonts.big_shoulder }
 export const FooterWrapper = styled.div`
     align-items: end;
     display: flex;
-    height: calc(10vh - ${md_size});
+    height: calc(15vh - ${md_size});
     justify-content: space-between;    
     padding: 0 ${hg_size};
     padding-bottom: ${md_size};
