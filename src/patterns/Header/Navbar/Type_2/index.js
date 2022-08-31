@@ -21,19 +21,20 @@ export default function Type_2() {
   
   const { locale, asPath } = useRouter();
   const PageMenu = Pages[locale];
+
   return (
     <div>     
         <TopWrapper>   
           <LangWrapper>
               <ul>
-                <li className={locale === "pt-BR" && 'active'}>
+                <li className={locale === "pt-BR" ? 'active' : null}>
                   <Link
                     activeClassName={locale === "pt-BR" && 'active'}
                     href={asPath}
                     locale="pt-BR">pt</Link>
                 </li>
                 <li> / </li>
-                <li className={locale === "en-US" && 'active'}>
+                <li className={locale === "en-US" ? 'active' : null}>
                   <Link
                     activeClassName={locale === "en-US"}
                     href={asPath}
@@ -57,7 +58,7 @@ export default function Type_2() {
             <Decoration decor_size='99%'></Decoration>
             <ul>
                 { PageMenu && PageMenu.map((page, i) => (
-                    <li key={i} className={page.link === '/about' ? 'active' : null}><Link href={page.link}><a>{page.title}</a></Link></li>
+                    <li key={i} className={page.link + '/' === asPath ? 'active' : null}><Link href={page.link}><a>{page.title}</a></Link></li>
                 ))    }        
             </ul>       
         </MenuWrapper>

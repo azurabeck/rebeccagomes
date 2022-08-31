@@ -1,4 +1,5 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
+import styled from 'styled-components'
 
 export const theme = {
     colors: {
@@ -12,11 +13,13 @@ export const theme = {
       // HOT COLORS
       red: '#DB2222',
       pink: '#F54653',
+      pink_2: '#E64242',
       orange: '#FBAF40',
       yellow: '#FCD546',
+      wine: '#B46280',
+      purple: '#6100ff',
   
       // LIGHT COLORS
-      purple: '#6100ff',
       light_blue: '#69AFBD',
     },
     fonts: {
@@ -41,3 +44,8 @@ export const theme = {
       }
   `
   
+  export const ContentWrapper = styled.div`
+      margin: 0 auto;
+      margin-top: 80px;
+      max-width: 1050px;
+  `

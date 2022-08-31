@@ -31,14 +31,14 @@ export default function Type_1(props) {
 
         <LangWrapper>
             <ul>
-              <li className={locale === "pt-BR" && 'active'}>
+              <li className={locale === "pt-BR" ? 'active' : null}>
                 <Link
                   activeClassName={locale === "pt-BR" && 'active'}
                   href={asPath}
                   locale="pt-BR">pt</Link>
               </li>
               <li> / </li>
-              <li className={locale === "en-US" && 'active'}>
+              <li className={locale === "en-US" ? 'active' : null}>
                 <Link
                   activeClassName={locale === "en-US"}
                   href={asPath}
