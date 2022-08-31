@@ -7,7 +7,7 @@ export const theme = {
       // NEUTRAL COLORS
       gray: '#888888',
       light_gray: "#A2B2B6",
-      dark_gray: '#61777B',
+      dark_gray: '#747474',
   
       // HOT COLORS
       red: '#DB2222',
@@ -36,15 +36,8 @@ export const theme = {
         margin: 0;
       }
 
-      #__next {        
-        background: linear-gradient(#ffffff, #d1d1d1);        
-        bottom: 0; 
-        left: 0;  
-        position: absolute;
-        right: 0;
-        top: 0;   
+      body {        
+        background: linear-gradient(#ffffff, #d1d1d1);   
       }
-
-
-  `;
+  `
   
