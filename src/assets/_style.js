@@ -48,4 +48,5 @@ export const theme = {
       margin: 0 auto;
       margin-top: 80px;
       max-width: 1050px;
+      padding: 0 30px;
   `

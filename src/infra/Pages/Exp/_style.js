@@ -38,7 +38,6 @@ export const Text = styled.div`
     min-height: 200px;
     padding: ${size_md};
     text-align: left;
-    width: 100%;
 `
 
 export const Bullet = styled.div`

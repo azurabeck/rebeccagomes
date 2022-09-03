@@ -1,7 +1,7 @@
 import React from 'react'
 import Locale from './_locale'
 import { Text } from './_style'
-import { ContentWrapper } from '../../../assets/_style'
+import { ContentWrapper } from '@/assets/_style'
 import { useRouter } from "next/router";
 
 export const About = () => {  

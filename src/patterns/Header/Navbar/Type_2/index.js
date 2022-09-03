@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import ImageImp from '../../../../assets/images/cover_2.png'
 import Link from 'next/link'
-import React from 'react'
+import React , { useState } from 'react'
 import Pages from '../../../../infra/Data/pages.json'
 import { LangWrapper } from '../style'
+import { arrowIc , barsIc } from '../../../../assets/fontawesome'
 import { useRouter } from "next/router";
 import { 
   Decoration, 
+  MenuMobileWrapper,
   MenuWrapper, 
   Title,
   Title_Var01, 
@@ -18,13 +20,14 @@ import {
 }   from './style'
 
 export default function Type_2() {
-  
+
+  const [menu , setMenuState] = useState(false)  
   const { locale, asPath } = useRouter();
   const PageMenu = Pages[locale];
 
   return (
     <div>     
-        <TopWrapper>   
+        <TopWrapper>
           <LangWrapper>
               <ul>
                 <li className={locale === "pt-BR" ? 'active' : null}>
@@ -41,7 +44,18 @@ export default function Type_2() {
                     locale="en-US">en</Link>
                 </li>
               </ul>  
-          </LangWrapper> 
+          </LangWrapper>    
+          <MenuMobileWrapper>
+              <div onClick={() => setMenuState(!menu)}> { barsIc } </div>
+              { menu &&
+                  <ul>
+                      <li onClick={() => setMenuState(!menu)}> { barsIc } </li>
+                      { PageMenu && PageMenu.map((page, i) => (
+                          <li key={i} className={page.link + '/' === asPath ? 'active' : null}><Link href={page.link}><a>{page.title} {arrowIc}</a></Link></li>
+                      ))    }  
+                  </ul>        
+              }
+          </MenuMobileWrapper>
         </TopWrapper>
 
         <Wallpaper>
