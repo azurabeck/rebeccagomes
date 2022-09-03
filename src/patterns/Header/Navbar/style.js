@@ -17,11 +17,9 @@ ul {
 
   li {
     color: ${cl_primary};
-    font-weight: 500;
 
     a {
       color: ${cl_primary};
-      font-weight: 500;
       padding: 0 ${size_xs};
       text-decoration: none;
         &:hover {

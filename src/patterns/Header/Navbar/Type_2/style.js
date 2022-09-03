@@ -173,11 +173,8 @@ export const TopWrapper = styled.div`
     align-items: center;
     display: flex;
     justify-content: flex-end;
-    position: absolute;
-    right: ${size_xl};
-    top: ${size_xl};
-    width: 100%;
-    
+    margin-top: ${size_xl};
+    width: calc(100% - 20px);    
 `
 
 export const Wallpaper = styled.section`

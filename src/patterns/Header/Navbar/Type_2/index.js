@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import ImageImp from '../../../../assets/images/cover_2.png'
 import Link from 'next/link'
+import MenuMobile from '../../../MenuMob'
 import React , { useState } from 'react'
 import Pages from '../../../../infra/Data/pages.json'
 import { LangWrapper } from '../style'
@@ -45,17 +46,7 @@ export default function Type_2() {
                 </li>
               </ul>  
           </LangWrapper>    
-          <MenuMobileWrapper>
-              <div onClick={() => setMenuState(!menu)}> { barsIc } </div>
-              { menu &&
-                  <ul>
-                      <li onClick={() => setMenuState(!menu)}> { barsIc } </li>
-                      { PageMenu && PageMenu.map((page, i) => (
-                          <li key={i} className={page.link + '/' === asPath ? 'active' : null}><Link href={page.link}><a>{page.title} {arrowIc}</a></Link></li>
-                      ))    }  
-                  </ul>        
-              }
-          </MenuMobileWrapper>
+          <MenuMobile />
         </TopWrapper>
 
         <Wallpaper>
