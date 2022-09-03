@@ -17,76 +17,10 @@ const ft_title_02 = (props) => { return props.theme.fonts.size[8] }
 const ft_title_03 = (props) => { return props.theme.fonts.size[1] }
 const ft_title_04 = (props) => { return props.theme.fonts.size[6] }
 
-
-export const MenuMobileWrapper = styled.section`
-
-      align-items: center;
-      display: flex;
-      
-      div {
-        align-items: center;
-        display: flex;
-        justify-content: flex-start;
-        
-        svg {
-          width: ${ft_title_02};
-        }
-
-        &:hover {
-          color: ${cl_red};
-          cursor: pointer;
-        }       
-      }
-      
-      ul {
-          align-items: center;
-          background: linear-gradient(90deg, #ffffffeb, #fff);
-          display: flex;
-          flex-direction: column;
-          height: calc(100vh - 25px);
-          list-style: none;
-          margin-left: ${size_sm};
-          padding: 0;
-          position: absolute;
-          right: -24px;
-          top: 0px;
-          width: 100%;
-          z-index: 999;
-
-          li {
-            margin-right: ${size_sm};
-            padding: 15px;
-            text-align: right;
-            width: calc(100% - 30px);
-
-            a {   
-              align-items: center;    
-              color: ${cl_primary};
-              display: flex;
-              justify-content: space-between;   
-              text-decoration: none;
-
-              &:hover {
-                color: ${cl_red};
-              }
-            }
-            
-            &.active {
-                a {                    
-                    color: ${cl_pink};
-                }
-            }
-
-            &::first-child {
-                padding: 0 50px;
-            }
-          }
-        }
-
-    @media only screen and (min-width: 450px) {
-        display: none;
-    }  
-`
+const ft_title_mb_01 = (props) => { return props.theme.fonts.size[3] }
+const ft_title_mb_02 = (props) => { return props.theme.fonts.size[7] }
+const ft_title_mb_03 = (props) => { return props.theme.fonts.size[0] }
+const ft_title_mb_04 = (props) => { return props.theme.fonts.size[5] }
 
 export const MenuWrapper = styled.section`
    align-items: center;
@@ -147,25 +81,41 @@ export const Title = styled.p`
 
 export const Title_Var01 = styled.span`
     color: ${cl_gray};
-    font-size: ${ft_title_01};
+    font-size: ${ft_title_mb_01};
+
+    @media only screen and (min-width: 450px) {
+        font-size: ${ft_title_01};
+    }  
 `
 export const Title_Var02 = styled.span`
     color: ${cl_pink};
-    font-size: ${ft_title_02};
+    font-size: ${ft_title_mb_02};
     letter-spacing: -0.05em;
     margin-right: ${size_xs};
     text-transform: uppercase;
+
+    @media only screen and (min-width: 450px) {
+        font-size: ${ft_title_02};
+    }  
 `
 export const Title_Var03 = styled.span`
     color: ${cl_pink};
-    font-size: ${ft_title_03};
+    font-size: ${ft_title_mb_03};
+
+    @media only screen and (min-width: 450px) {
+        font-size: ${ft_title_03};
+    }  
 `
 export const Title_Var04 = styled.span`
     align-items: center;
     color: ${cl_gray};
     display: flex;
-    font-size: ${ft_title_04};
+    font-size: ${ft_title_mb_04};
     justify-content: flex-end;
+
+    @media only screen and (min-width: 450px) {
+        font-size: ${ft_title_04};
+    }  
 `
 
 
@@ -180,6 +130,26 @@ export const TopWrapper = styled.div`
 export const Wallpaper = styled.section`
     align-items: center;
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     margin-top: ${size_xxl};
+
+
+    img {
+        transform: rotate(270deg);
+        object-fit: contain;
+        width: 60% !important;
+    }
+
+    
+    @media only screen and (min-width: 450px) {
+        flex-direction: row;
+
+        
+        img {
+            transform: unset;
+            object-fit: unset;
+            width: unset !important;
+        }
+    }  
 `

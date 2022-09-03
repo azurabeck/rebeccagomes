@@ -4,12 +4,9 @@ import Link from 'next/link'
 import MenuMobile from '../../../MenuMob'
 import React , { useState } from 'react'
 import Pages from '../../../../infra/Data/pages.json'
-import { LangWrapper } from '../style'
-import { arrowIc , barsIc } from '../../../../assets/fontawesome'
 import { useRouter } from "next/router";
 import { 
   Decoration, 
-  MenuMobileWrapper,
   MenuWrapper, 
   Title,
   Title_Var01, 
@@ -29,23 +26,6 @@ export default function Type_2() {
   return (
     <div>     
         <TopWrapper>
-          <LangWrapper>
-              <ul>
-                <li className={locale === "pt-BR" ? 'active' : null}>
-                  <Link
-                    activeClassName={locale === "pt-BR" && 'active'}
-                    href={asPath}
-                    locale="pt-BR">pt</Link>
-                </li>
-                <li> / </li>
-                <li className={locale === "en-US" ? 'active' : null}>
-                  <Link
-                    activeClassName={locale === "en-US"}
-                    href={asPath}
-                    locale="en-US">en</Link>
-                </li>
-              </ul>  
-          </LangWrapper>    
           <MenuMobile />
         </TopWrapper>
 

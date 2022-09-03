@@ -32,21 +32,32 @@ export const theme = {
     },
     space: { none: 0, xxs: '4px', xs: '8px', sm: '12px', md: '16px', lg: '20px', xl: '24px', xxl: '28px', hg: '32px'  }
   }
-  
+
   export const GlobalStyle = createGlobalStyle`
       * {      
         font-family: ${theme.fonts.roboto};
+        font-size: ${theme.fonts.size[3]};
         margin: 0;
       }
 
       body {        
         background: linear-gradient(#ffffff, #d1d1d1);   
       }
+
+      @media only screen and (min-width: 450px) {
+          * {            
+              font-size: ${theme.fonts.size[5]};
+          }
+      }
   `
   
   export const ContentWrapper = styled.div`
       margin: 0 auto;
-      margin-top: 80px;
+      margin-top: 15px;
       max-width: 1050px;
       padding: 0 30px;
+
+      @media only screen and (min-width: 450px) {
+        margin-top: 80px;
+      }
   `

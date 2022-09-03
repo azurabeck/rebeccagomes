@@ -29,6 +29,7 @@ export const FooterWrapper = styled.div`
 
                 svg {                    
                     width: ${xxl_size};
+                    font-size: ${xxl_size};
                 }
 
                 &:hover {

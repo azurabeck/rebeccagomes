@@ -44,7 +44,11 @@ const Wallpaper = styled.div`
       background-size: contain;
       height: 100%;
       position: absolute;
-      width: 100%;
+      width: 85%;
+
+      @media only screen and (min-width: 450px) {
+        width: 100%;
+      } 
 `
 
 

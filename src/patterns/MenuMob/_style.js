@@ -35,9 +35,9 @@ export const MenuMobileWrapper = styled.section`
       ul {
           align-items: center;
           background: linear-gradient(90deg, #ffffffeb, #fff);
+          bottom: 0;
           display: flex;
           flex-direction: column;
-          height: calc(100vh - 25px);
           list-style: none;
           margin-left: ${size_sm};
           padding: 0;
@@ -76,10 +76,16 @@ export const MenuMobileWrapper = styled.section`
             }
 
             &:first-child {
+                margin-right: 4px;
                 padding-top: 30px;
 
                 svg {
                     width: ${ft_title_02};
+
+                    &:hover {
+                      color: ${cl_red};
+                      cursor: pointer;
+                    }
                 }
             }
           }

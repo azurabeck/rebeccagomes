@@ -53,8 +53,8 @@ export const Bullet = styled.div`
         border-radius: 50%;
         background-color: ${cl_light_gray};
         display: block;
-        height: 20px;
-        width: 20px;
+        height: 14px;
+        width: 14px;
         margin: ${size_sm};
 
         &.active {
@@ -63,6 +63,11 @@ export const Bullet = styled.div`
         &:hover {
             background-color: ${cl_gray};
             cursor: pointer;
+        }
+
+        @media only screen and (min-width: 450px) {          
+            height: 20px;
+            width: 20px;   
         }
     }
 `
