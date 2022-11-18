@@ -42,8 +42,11 @@ export const Sidebar = (props) => {
                                                         {
                                                             tabs && open && tabs.map((subOption, i) => {
                                                                 return (                                                                    
-                                                                   <label key={i} className={pathname == subOption.link ? 'sub-active' : null}>
-                                                                        <Link href={subOption.link}><a>{subOption.title}</a></Link>
+                                                                   <label 
+                                                                        className={pathname == subOption.link ? 'sub-active' : null} 
+                                                                        key={i}
+                                                                        onClick={() => setSidebarState(false)}>
+                                                                            <Link href={subOption.link}><a>{subOption.title}</a></Link>
                                                                     </label> 
                                                                 )
                                                             })
@@ -51,7 +54,9 @@ export const Sidebar = (props) => {
                                                     </SubOption>
                                                   </>
                                                 : <Link href={page.link}><a>
-                                                        <label className={pathname == page.link ? 'item-active' : null}>{page.title}</label> 
+                                                        <label 
+                                                            className={pathname == page.link ? 'item-active' : null} 
+                                                            onClick={() => setSidebarState(false)}>{page.title}</label> 
                                                   </a></Link>
                                             }                                            
                                         </li>
