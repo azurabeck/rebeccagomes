@@ -33,11 +33,11 @@ export const Header = () => {
             </Navbar>
             <Menu>
                 <MenuData>
-                    { PageMenu && PageMenu.map((page, i) => {
-                        
+                    { PageMenu && PageMenu.map((page, i) => {                        
+                        const area = pathname.split('/')[1] == page.link.split('/')[1]                        
                         return (
                             page.link === '/' ? null : 
-                                <li key={i} className={pathname == page.link ? 'active' : null}>
+                                <li key={i} className={area ? 'active' : null}>
                                     <Link href={page.link}><a>{page.title}</a></Link>
                                 </li>
                         )

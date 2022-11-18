@@ -1,10 +1,17 @@
+
+import Link from 'next/link'
 import React, { useState } from 'react'
-import { OutsideArea, SidebarClose, SidebarContainer, SidebarOpen, SidebarWrapper } from './_style'
-import { barsIc } from '@/assets/fontawesome'
+import { MenuOption, OutsideArea, SidebarClose, SidebarContainer, SidebarMenu, SidebarOpen, SidebarWrapper, SubOption } from './_style'
+import { barsIc , arrowUpIc , arrowDownIc } from '@/assets/fontawesome'
+import { useRouter } from "next/router";
+import MenuData from '@/infra/Data/pages.json'
 
 export const Sidebar = (props) => {  
 
     const [ sidebarState , setSidebarState ] = useState(false)
+    const [ menuState , setMenuState ] = useState(false)
+    const { locale , pathname } = useRouter();
+    const PageMenu = MenuData[locale];
     
     return (
             <SidebarWrapper>
@@ -14,6 +21,43 @@ export const Sidebar = (props) => {
                     <SidebarOpen>
                         <SidebarContainer>
                             <span/>
+
+                            <SidebarMenu>
+                                { PageMenu && PageMenu.map((page, i) => {
+                                    
+                                    const tabs = page.tabs 
+                                    const area = pathname.split('/')[1] == page.link.split('/')[1]
+                            
+                                    return (
+                                        <li key={i}>
+                                            {
+                                                page.tabs ?
+                                                  <>
+                                                    <MenuOption onClick={() => setMenuState(!menuState)}>
+                                                        <label className={area ? 'item-active' : null}>{page.title}</label> 
+                                                        {menuState ? arrowUpIc : arrowDownIc}
+                                                    </MenuOption>
+                                                    <SubOption>                                                    
+                                                        {
+                                                            tabs && menuState && tabs.map((subOption, i) => {
+                                                                return (                                                                    
+                                                                   <label key={i} className={pathname == subOption.link ? 'sub-active' : null}>
+                                                                        <Link href={subOption.link}><a>{subOption.title}</a></Link>
+                                                                    </label> 
+                                                                )
+                                                            })
+                                                        }
+                                                    </SubOption>
+                                                  </>
+                                                : <Link href={page.link}><a>
+                                                        <label className={pathname == page.link ? 'item-active' : null}>{page.title}</label> 
+                                                  </a></Link>
+                                            }                                            
+                                        </li>
+                                    )
+                                })}
+                            </SidebarMenu>
+
                         </SidebarContainer>
                         <OutsideArea onClick={() => setSidebarState(!sidebarState)}></OutsideArea>
                     </SidebarOpen>

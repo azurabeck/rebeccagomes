@@ -11,7 +11,7 @@ export const theme = {
       font_gray_light: "#8C8597",
 
       // NEUTRAL COLORS
-      gray: '#888888',
+      white: '#F5F5F5',
       light_gray: "#D7D7D7", //Divisor,
       dark_gray: '#747474',
   
