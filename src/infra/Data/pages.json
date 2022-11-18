@@ -1,54 +1,141 @@
 {
     "en-US": [
         {
-            "title": "Home",
+            "title": "News",
             "link": "/",
-            "head": "RS Portifólio - Home"
+            "head": "PSafe - news",
+            "tabs": []
+        }, 
+        {
+            "title": "Enginnering",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
         },
         {
-            "title": "About",
-            "link": "/about",
-            "head": "RS Portifólio - About"
+            "title": "B.I",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
         },
         {
-            "title": "Experience",
-            "link": "/exp",
-            "head": "RS Portifólio - Experience"
+            "title": "Monetization",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
         },
         {
-            "title": "Profile",
-            "link": "/profile",
-            "head": "RS Portifólio - Profile"
+            "title": "Q.A.",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
         },
         {
-            "title": "Contact",
-            "link": "/contact",
-            "head": "RS Portifólio - Contact"
-    }],
+            "title": "Security",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
+        },
+        {
+            "title": "Product",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
+        },
+        {
+            "title": "Marketing",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
+        },
+        {
+            "title": "UX Design",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
+        },
+        {
+            "title": "Growth",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
+        },
+        {
+            "title": "Ad Sales",
+            "link": "/",
+            "head": "PSafe - news",
+            "tabs": []
+        }],
     "pt-BR": [
         {
-            "title": "Capa",
+            "title": "Notícias",
             "link": "/",
-            "head": "RS Portifólio - Home"
+            "head": "PSafe - notícias",
+            "tabs": null
+        }, 
+        {
+            "title": "Serviços",
+            "link": "/servicos",
+            "head": "PSafe - serviços",
+            "tabs": [
+                {"title": "Notícias de Servicos" , "link": "/servicos"},
+                {"title": "Documentos de backend" , "link": "/servicos/backend"},
+                {"title": "Documentos de frontend" , "link": "/servicos/frontend"},
+                {"title": "Vídeos do loom" , "link": "/servicos/videos"}
+            ]
         },
         {
-            "title": "Sobre",
-            "link": "/about",
-            "head": "RS Portifólio - About"
+            "title": "B.I",
+            "link": "/bi",
+            "head": "PSafe - b.i.",
+            "tabs": null
         },
         {
-            "title": "Experiencia",
-            "link": "/exp",
-            "head": "RS Portifólio - Experience"
+            "title": "Monetization",
+            "link": "/monetization",
+            "head": "PSafe - monetization",
+            "tabs": null
         },
         {
-            "title": "Profile",
-            "link": "/profile",
-            "head": "RS Portifólio - Profile"
+            "title": "Q.A.",
+            "link": "/qa",
+            "head": "PSafe - q.a.",
+            "tabs": null
         },
         {
-            "title": "Contato",
-            "link": "/contact",
-            "head": "RS Portifólio - Contact"
-    }]
+            "title": "Security",
+            "link": "/security",
+            "head": "PSafe - security",
+            "tabs": null
+        },
+        {
+            "title": "Produto",
+            "link": "/produto",
+            "head": "PSafe - produto",
+            "tabs": null
+        },
+        {
+            "title": "Marketing",
+            "link": "/marketing",
+            "head": "PSafe - marketing",
+            "tabs": null
+        },
+        {
+            "title": "UX Design",
+            "link": "/uxdesign",
+            "head": "PSafe - ux design",
+            "tabs": null
+        },
+        {
+            "title": "Growth",
+            "link": "/growth",
+            "head": "PSafe - growth",
+            "tabs": null
+        },
+        {
+            "title": "Ad Sales",
+            "link": "/adsales",
+            "head": "PSafe - ad sales",
+            "tabs": null
+        }]
 }
