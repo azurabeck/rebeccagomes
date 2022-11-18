@@ -9,7 +9,7 @@ import MenuData from '@/infra/Data/pages.json'
 export const Sidebar = (props) => {  
 
     const [ sidebarState , setSidebarState ] = useState(false)
-    const [ menuState , setMenuState ] = useState(false)
+    const [ menuState , setMenuState ] = useState(null)
     const { locale , pathname } = useRouter();
     const PageMenu = MenuData[locale];
     
@@ -27,19 +27,20 @@ export const Sidebar = (props) => {
                                     
                                     const tabs = page.tabs 
                                     const area = pathname.split('/')[1] == page.link.split('/')[1]
+                                    const open = menuState == page.link
                             
                                     return (
                                         <li key={i}>
                                             {
                                                 page.tabs ?
                                                   <>
-                                                    <MenuOption onClick={() => setMenuState(!menuState)}>
+                                                    <MenuOption onClick={menuState === page.link ? () => setMenuState(null) : () => setMenuState(page.link)}>
                                                         <label className={area ? 'item-active' : null}>{page.title}</label> 
-                                                        {menuState ? arrowUpIc : arrowDownIc}
+                                                        {open ? arrowUpIc : arrowDownIc}
                                                     </MenuOption>
                                                     <SubOption>                                                    
                                                         {
-                                                            tabs && menuState && tabs.map((subOption, i) => {
+                                                            tabs && open && tabs.map((subOption, i) => {
                                                                 return (                                                                    
                                                                    <label key={i} className={pathname == subOption.link ? 'sub-active' : null}>
                                                                         <Link href={subOption.link}><a>{subOption.title}</a></Link>
