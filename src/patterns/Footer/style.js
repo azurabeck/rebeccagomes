@@ -11,17 +11,30 @@ const cl_red = (props) => { return props.theme.colors.red }
 const font = (props) => { return props.theme.fonts.big_shoulder }
 
 export const FooterWrapper = styled.div`
-    align-items: end;
+    align-items: center;
     display: flex;
+    flex-direction: column;
     height: calc(15vh - ${md_size});
-    justify-content: space-between;    
+    justify-content: flex-end;    
     padding: 0 ${hg_size};
     padding-bottom: ${md_size};
 
+    @media only screen and (min-width: 550px) {
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;   
+    } 
+
     ul { 
+        display: flex;
         font-size: ${xxl_size};
+        flex-direction: row;
         list-style: none;
         padding: 0;
+        
+        @media only screen and (min-width: 550px) {
+            flex-direction: column;
+        } 
 
         li {
             a {                

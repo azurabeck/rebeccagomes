@@ -45,10 +45,14 @@ export const Bullet = styled.div`
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     margin-top: ${size_hg};
     padding: 0;
     
+    @media only screen and (min-width: 550px) {
+        margin-bottom: 150px; 
+    } 
+
     li {
         border-radius: 50%;
         background-color: ${cl_light_gray};

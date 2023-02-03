@@ -25,7 +25,7 @@ export const NavbarWrapper = styled.div`
       justify-content: flex-end;
     }    
 
-    @media only screen and (min-width: 450px) {
+    @media only screen and (min-width: 550px) {
       justify-content: space-between;
     }  
 `;
@@ -81,7 +81,7 @@ export const MenuWrapper = styled.section`
           }
         }
 
-    @media only screen and (min-width: 450px) {
+    @media only screen and (min-width: 550px) {
         display: flex;
     } 
 `

@@ -10,8 +10,8 @@ export const About = () => {
     const LocaleText = Locale[locale]
 
     return (
-      <ContentWrapper>
-        <Text dangerouslySetInnerHTML={{ __html: LocaleText }} />    
+      <ContentWrapper>        
+        <Text dangerouslySetInnerHTML={{ __html: LocaleText }} />
       </ContentWrapper>
     )
  }
