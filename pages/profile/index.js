@@ -1,10 +1,3 @@
-import React, { Component } from 'react'
-
-export const Profile = () => {  
-    return (
-      <div>Profile</div>
-    )
- }
-
+import Profile from '../../src/infra/Pages/Profile'
 
 export default Profile
