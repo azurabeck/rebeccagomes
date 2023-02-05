@@ -19,12 +19,8 @@
             "title": "Profile",
             "link": "/profile",
             "head": "RS Portifólio - Profile"
-        },
-        {
-            "title": "Contact",
-            "link": "/contact",
-            "head": "RS Portifólio - Contact"
-    }],
+        }
+    ],
     "pt-BR": [
         {
             "title": "Capa",
@@ -45,10 +41,6 @@
             "title": "Profile",
             "link": "/profile",
             "head": "RS Portifólio - Profile"
-        },
-        {
-            "title": "Contato",
-            "link": "/contact",
-            "head": "RS Portifólio - Contact"
-    }]
+        }
+    ]
 }

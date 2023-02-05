@@ -2,33 +2,48 @@ import React , {useState} from 'react'
 import Link from 'next/link'
 import Locale from './_locale'
 import { ContentWrapper } from '../../../assets/_style'
-import { ProfileWrapper , Text } from './_style';
+import { ProfileWrapper , TitleWrapper , Wallpaper, WorkContainer } from './_style';
 import { useRouter } from "next/router";
 
-import Image from 'next/image'
-import ImgEnterprise from '@/assets/images/enterprise_image_01.png'
-import ImgCyberlabs from '@/assets/images/cyberlabs_image_01.png'
-import ImgPsafe from '@/assets/images/psafe_image_01.png'
+import cyberImage from '@/assets/images/cyberlabs_image_01.png'
+import enterImage from '@/assets/images/enterprise_image_01.png'
+import psafeImage from '@/assets/images/psafe_image_01.png'
+
 
 export const Profile = () => {  
     
     const { locale } = useRouter();
-    const LocaleText = Locale[locale]
-
-    const enterprise = 'https://enterprise.psafe.com'
-    const cyber = 'https://cyberlabs.ai'
-    const psafe = 'https://psafe.com'
-
-
+    const LocaleText = Locale[locale][0]
+    const WorkText = LocaleText.work_list
+    
     return (
       <ContentWrapper>
         <ProfileWrapper>
 
-          <Text dangerouslySetInnerHTML={{ __html: LocaleText }} />
+          <TitleWrapper>
+              <h2 className='title'>{LocaleText.profile_title}</h2>
+              <h2 className='period'>{LocaleText.profile_desc}</h2>
+          </TitleWrapper>
 
-          <Link href={enterprise}><a target='_blank'> Enterprise </a></Link> 
-          <Link href={cyber}><a target='_blank'> Cyberlabs </a></Link> 
-          <Link href={psafe}><a target='_blank'> PSafe </a></Link> 
+          <WorkContainer>
+            {
+              WorkText && WorkText.map((item, i) => {
+
+               
+
+                return (
+                   <Wallpaper key={i} image={
+                      item.title === 'Cyberlabs' && cyberImage ||
+                      item.title === 'Enterprise' && enterImage ||
+                      item.title === 'PSafe' && psafeImage 
+                   }>
+                      <Link href={item.link}><a target='_blank'> <p>{item.title}</p> </a></Link> 
+                      
+                   </Wallpaper>
+                )
+              })
+            }
+          </WorkContainer>
 
          </ProfileWrapper>     
       </ContentWrapper>
