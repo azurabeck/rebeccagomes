@@ -9,7 +9,7 @@ const SocialNetwork =
         },
         {
             "alt": "linkedin",
-            "url": "https://www.linkedin.com/in/rebecca-gomes-de-souza-11954b16b/",
+            "url": "https://www.linkedin.com/in/rebecca-souza-11954b16b/",
             "img": linkedinIc
         },
         {
