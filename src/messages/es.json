@@ -1,0 +1,176 @@
+{
+  "meta": {
+    "title": "Rebecca Souza — Desarrolladora Frontend (React)",
+    "description": "Desarrolladora frontend con 15 años en tecnología, entre QA, liderazgo y desarrollo. Creo interfaces en React que la gente disfruta usar, ahora con IA."
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido"
+  },
+  "nav": {
+    "label": "Principal",
+    "home": "RS — Rebecca Souza, volver arriba",
+    "about": "Sobre mí",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "contact": "Contacto",
+    "menu": "Menú",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
+  },
+  "localeSwitcher": {
+    "label": "Idioma",
+    "names": {
+      "en": "English",
+      "pt": "Português",
+      "es": "Español"
+    }
+  },
+  "themeToggle": {
+    "label": "Cambiar tema de color"
+  },
+  "hero": {
+    "eyebrow": "Desarrolladora Frontend · Río de Janeiro → Remoto",
+    "headline": "Creo interfaces que la gente disfruta usar — ahora con IA.",
+    "lead": "Quince años en tecnología, entre QA, liderazgo de equipos y desarrollo frontend. Aporto la mirada de quien prueba y la formación de quien diseña a productos en React, y últimamente los entrego con IA generativa integrada.",
+    "viewProjects": "Ver proyectos",
+    "downloadCv": "Descargar CV",
+    "social": {
+      "label": "Dónde encontrarme",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "email": "Correo"
+    },
+    "artAlt": "Retrato de Rebecca Souza recortado en rombos de colores superpuestos"
+  },
+  "stats": {
+    "label": "Carrera en números",
+    "items": {
+      "years": {
+        "value": "15",
+        "label": "años en tecnología"
+      },
+      "react": {
+        "value": "4+",
+        "label": "años con React"
+      },
+      "ai": {
+        "value": "2",
+        "label": "apps con IA en producción"
+      },
+      "languages": {
+        "value": "3",
+        "label": "idiomas"
+      }
+    }
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "De romper software a construirlo.",
+    "paragraphs": {
+      "p1": "Empecé en tecnología en 2011 como analista de QA en PSafe, mientras estudiaba Diseño Industrial. Seis años descubriendo cómo se rompe el software me enseñaron a cuidar cómo debe sentirse al usarlo.",
+      "p2": "En 2017 pasé al desarrollo frontend y dediqué dos años a crear herramientas en React en PSafe. Después llegó el liderazgo: dirigí equipos y proyectos de frontend en PSafe, CyberLabs, Mercado Livre y Safra International Bank (a través de Foursys).",
+      "p3": "En 2025 volví a programar a tiempo completo, creando interfaces en Vue.js en Lifemed. Soy licenciada en Ciencias de la Computación (2024) y cursé ocho semestres de Diseño Industrial, que todavía guían mi forma de pensar el layout, la forma y el detalle."
+    },
+    "arc": {
+      "title": "Arco de carrera",
+      "steps": {
+        "qa": "QA",
+        "developer": "Dev",
+        "lead": "Liderazgo",
+        "developerAgain": "Dev otra vez"
+      }
+    }
+  },
+  "projects": {
+    "eyebrow": "Proyectos",
+    "title": "Trabajos recientes, con IA en el proceso.",
+    "aiBadge": "Con IA",
+    "stackLabel": "Tecnologías",
+    "liveDemo": "Ver demo",
+    "code": "Código",
+    "screenshotAlt": "Captura de pantalla de la app {title}",
+    "items": {
+      "maibook": {
+        "description": "App para escribir libros con un asistente de IA dentro del editor. Quien escribe llama a Gemini cuando quiere revisar la gramática o recibir ideas para el siguiente pasaje."
+      },
+      "tickflix": {
+        "description": "App de cine en la que le cuentas a la IA lo que te gusta y recibes una línea de tiempo personalizada de qué ver, generada por Gemini a partir de tus preferencias."
+      }
+    }
+  },
+  "experience": {
+    "eyebrow": "Experiencia",
+    "title": "Quince años, tres tipos de trabajo.",
+    "present": "actualidad",
+    "legendLabel": "Colores de los marcadores",
+    "legend": {
+      "dev": "Desarrollo",
+      "lead": "Liderazgo",
+      "qa": "QA"
+    },
+    "items": {
+      "lifemed": {
+        "role": "Desarrolladora Frontend",
+        "description": "Dashboard en Vue.js con datos de facturación de la empresa y de sus clientes; interfaces de monitoreo médico."
+      },
+      "foursys": {
+        "role": "Líder de Proyectos",
+        "description": "Liderazgo de proyectos de frontend para Safra International Bank, como consultora de Foursys."
+      },
+      "mercadoLivre": {
+        "role": "Líder de Proyectos",
+        "description": "Liderazgo de la entrega de proyectos con equipos de frontend."
+      },
+      "cyberlabs": {
+        "role": "Líder de Frontend",
+        "description": "Liderazgo del equipo de frontend."
+      },
+      "psafeLead": {
+        "role": "Líder de Frontend",
+        "description": "Liderazgo del equipo de frontend, tras dos años como desarrolladora en él."
+      },
+      "psafeDev": {
+        "role": "Desarrolladora Frontend",
+        "description": "Herramientas internas en React, incluido un dashboard de monitoreo de filtraciones de datos (LGPD) para clientes B2B."
+      },
+      "psafeQa": {
+        "role": "Analista de QA",
+        "description": "Aseguramiento de calidad de los productos de PSafe, de pasante a analista sénior."
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Habilidades",
+    "title": "Con qué trabajo.",
+    "groups": {
+      "frontend": "Frontend",
+      "data": "Datos y APIs",
+      "ai": "IA",
+      "tools": "Herramientas",
+      "practices": "Prácticas"
+    },
+    "labels": {
+      "dockerBasics": "Docker (básico)",
+      "testing": "Pruebas",
+      "accessibility": "Accesibilidad",
+      "scrum": "Scrum",
+      "codeReview": "Revisión de código"
+    }
+  },
+  "contact": {
+    "headline": "Construyamos algo juntos.",
+    "lead": "Estoy abierta a puestos remotos de React. La forma más rápida de contactarme es por WhatsApp o Telegram.",
+    "messagingLabel": "Envíame un mensaje",
+    "whatsapp": "WhatsApp",
+    "telegram": "Telegram",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "copyAria": "Copiar dirección de correo",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "builtWith": "Hecho con Next.js y Tailwind",
+    "source": "Ver código"
+  }
+}
