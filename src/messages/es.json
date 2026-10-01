@@ -12,6 +12,7 @@
     "about": "Sobre mí",
     "projects": "Proyectos",
     "experience": "Experiencia",
+    "education": "Formación",
     "contact": "Contacto",
     "menu": "Menú",
     "openMenu": "Abrir menú",
@@ -49,9 +50,9 @@
         "value": "15",
         "label": "años en tecnología"
       },
-      "react": {
-        "value": "4+",
-        "label": "años con React"
+      "frontend": {
+        "value": "8+",
+        "label": "años en frontend"
       },
       "ai": {
         "value": "2",
@@ -136,6 +137,28 @@
       "psafeQa": {
         "role": "Analista de QA",
         "description": "Aseguramiento de calidad de los productos de PSafe, de pasante a analista sénior."
+      }
+    }
+  },
+  "education": {
+    "eyebrow": "Formación",
+    "title": "Tecnología y diseño, lado a lado.",
+    "items": {
+      "cs": {
+        "degree": "Licenciatura en Ciencias de la Computación"
+      },
+      "design": {
+        "degree": "Diseño Industrial",
+        "note": "8 semestres cursados",
+        "description": "La base de diseño que todavía guía mi mirada para el layout, la forma y el detalle."
+      }
+    },
+    "languages": {
+      "title": "Idiomas",
+      "levels": {
+        "pt": "nativo",
+        "en": "B2",
+        "es": "intermedio"
       }
     }
   },

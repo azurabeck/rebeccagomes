@@ -48,9 +48,9 @@ src/
     sitemap.ts, robots.ts
   components/
     layout/          Header, MobileDrawer, LocaleSwitcher, ThemeToggle, Footer
-    sections/        Hero, Stats, About, Projects, Experience, Skills, Contact
+    sections/        Hero, Stats, About, Projects, Experience, Education, Skills, Contact
     ui/              Diamond, ButtonLink, Chip, Badge, BrowserFrame, Reveal, CopyEmailButton
-  data/              projects, experience, skills (typed)
+  data/              projects, experience, education, skills (typed)
   i18n/              routing, navigation, request config
   messages/          en.json, pt.json, es.json
   proxy.ts           locale detection and redirect
@@ -88,7 +88,7 @@ TypeScript reports step 3 if it is missed.
 yarn test
 ```
 
-Tests cover the language switcher, theme toggle, copy-email button and project cards, and the parity of the translation files. They render with the real message files and query by accessible role and name.
+Tests cover the language switcher, theme toggle, copy-email button, header navigation, project cards, education and stats sections, and the parity of the translation files. They render with the real message files and query by accessible role and name.
 
 ## Deployment
 

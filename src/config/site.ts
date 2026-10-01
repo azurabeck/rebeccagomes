@@ -16,4 +16,4 @@ export const site = {
   },
 } as const;
 
-export const navSections = ['about', 'projects', 'experience', 'contact'] as const;
+export const navSections = ['about', 'projects', 'experience', 'education', 'contact'] as const;

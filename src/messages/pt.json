@@ -12,6 +12,7 @@
     "about": "Sobre",
     "projects": "Projetos",
     "experience": "Experiência",
+    "education": "Formação",
     "contact": "Contato",
     "menu": "Menu",
     "openMenu": "Abrir menu",
@@ -49,9 +50,9 @@
         "value": "15",
         "label": "anos em tecnologia"
       },
-      "react": {
-        "value": "4+",
-        "label": "anos com React"
+      "frontend": {
+        "value": "8+",
+        "label": "anos em frontend"
       },
       "ai": {
         "value": "2",
@@ -136,6 +137,28 @@
       "psafeQa": {
         "role": "Analista de QA",
         "description": "Garantia de qualidade dos produtos da PSafe, de estagiária a analista sênior."
+      }
+    }
+  },
+  "education": {
+    "eyebrow": "Formação",
+    "title": "Tecnologia e design, lado a lado.",
+    "items": {
+      "cs": {
+        "degree": "Bacharelado em Ciência da Computação"
+      },
+      "design": {
+        "degree": "Desenho Industrial",
+        "note": "8 semestres cursados",
+        "description": "A base de design que ainda guia meu olhar para layout, forma e detalhe."
+      }
+    },
+    "languages": {
+      "title": "Idiomas",
+      "levels": {
+        "pt": "nativo",
+        "en": "B2",
+        "es": "intermediário"
       }
     }
   },

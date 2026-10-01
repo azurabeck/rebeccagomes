@@ -5,6 +5,7 @@ import { Footer } from '@/components/layout/Footer';
 import { Header } from '@/components/layout/Header';
 import { About } from '@/components/sections/About';
 import { Contact } from '@/components/sections/Contact';
+import { Education } from '@/components/sections/Education';
 import { Experience } from '@/components/sections/Experience';
 import { Hero } from '@/components/sections/Hero';
 import { Projects } from '@/components/sections/Projects';
@@ -44,6 +45,7 @@ export default function HomePage({ params }: { params: Promise<{ locale: Locale 
         <About />
         <Projects />
         <Experience />
+        <Education />
         <Skills />
         <Contact />
       </main>

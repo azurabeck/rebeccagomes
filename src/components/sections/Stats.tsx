@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import { Container } from '@/components/ui/Container';
 
-const items = ['years', 'react', 'ai', 'languages'] as const;
+const items = ['years', 'frontend', 'ai', 'languages'] as const;
 
 export function Stats() {
   const t = useTranslations('stats');

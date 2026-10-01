@@ -12,6 +12,7 @@
     "about": "About",
     "projects": "Projects",
     "experience": "Experience",
+    "education": "Education",
     "contact": "Contact",
     "menu": "Menu",
     "openMenu": "Open menu",
@@ -49,9 +50,9 @@
         "value": "15",
         "label": "years in tech"
       },
-      "react": {
-        "value": "4+",
-        "label": "years with React"
+      "frontend": {
+        "value": "8+",
+        "label": "years in frontend"
       },
       "ai": {
         "value": "2",
@@ -136,6 +137,28 @@
       "psafeQa": {
         "role": "QA Analyst",
         "description": "Quality assurance for PSafe's products, from intern to senior analyst."
+      }
+    }
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "Technology and design, side by side.",
+    "items": {
+      "cs": {
+        "degree": "B.Sc. in Computer Science"
+      },
+      "design": {
+        "degree": "Industrial Design",
+        "note": "8 semesters of coursework",
+        "description": "The design foundation that still guides my eye for layout, form and detail."
+      }
+    },
+    "languages": {
+      "title": "Languages",
+      "levels": {
+        "pt": "native",
+        "en": "B2",
+        "es": "intermediate"
       }
     }
   },
